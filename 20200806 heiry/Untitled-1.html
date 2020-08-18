@@ -1,0 +1,230 @@
+<div class="section04-txt">
+    <div class="sec04-txt">
+        <div class="sec04-txt-txt">
+            <h1>프로방스</h1> <br>
+            <h3>주소 : 경기도 파주시 탄현면 새오리로 69</h3> <br>
+            <p>남프랑스의 정취가 가득한 예쁜 마을과 아기자기한 골목들, <br>
+                꿈길 같은 꽃밭과 정원, 갓 구운 고소한 냄새, 자연을 닮은 갖가지 <br>
+                허브의 향기들, 동화 속 한 장면에 들어온 듯한 포토존과 문과 체험 <br>
+                공간들 그리고, 오래 사람받아온 맛집들 까지 프로방스마을에는 <br>
+                언제나 풍요로움이 가득합니다.</p>
+            <div class="section04-button-block">
+                <div class="section04-button-max">
+                    <p class="pro">프로방스</p>
+                    <p class="ru">류재은 <br> 베이커리</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="pro">프로방스</p>
+</div>
+<div class="section04-pro">
+    <p id="ru">류재은 <br>
+        베이커리</p>
+</div>
+
+
+
+
+
+
+#section04{
+    width: 100%;
+    display: flex;
+}
+.section04-txt{
+    background: url('../img/bg-color-blue.jpg');
+    width: 50%;
+    /* height: 1000px; */
+    display: flex;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.section04-pro{
+    background: url('../img/provence.jpg');
+    width: 50%;
+    /* height: 1000px; */
+    display: flex;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sec04-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 970px;
+    width: 100%;
+}
+.sec04-txt-txt>h1{
+    font-size: 48px;
+    color: #022e70;
+    font-family: 'GyeonggiTitleM';
+    letter-spacing: 7px;
+}
+.sec04-txt-txt>h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'GyeonggiBatang';
+    margin: 50px 0 30px;
+    font-weight: bold;
+}
+.sec04-txt-txt>p{
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    font-family: 'GyeonggiBatang';
+}
+
+.section04-txt{
+    position: relative;
+}
+#pro{
+    position:absolute;
+    bottom:0;
+    z-index: 99;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 20px 15px;
+    font-size: 18px;
+    font-family: 'GyeonggiTitleM';
+}
+#pro:hover{
+    cursor: pointer;
+    color: #ccc;
+}
+#ru{
+    position:absolute;
+    bottom:0;
+    z-index: 99;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 11px 15px;
+    font-size: 18px;
+    font-family: 'GyeonggiTitleM';
+    text-align: center;
+}
+#ru:hover{
+    cursor: pointer;
+    color: #ccc;
+}
+.section04-button-block{
+    display: none;
+}
+.section04-button-max{
+    background: rgba(0, 0, 0, 0.4);
+    width: 150px;
+    display: flex;
+    padding: 1% 0 1%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+.section04-button-max>p{
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GyeonggiBatang';
+    font-weight: bold;
+    line-height: 20px;
+}
+.pro{
+    padding: 8px 12px 0;
+}
+.section04-button-max>p:hover{
+    cursor: pointer;
+    color: #ccc;
+}
+
+
+
+@media (max-width:767px){
+    #section04{
+        flex-direction: column-reverse;
+    }
+    .section04-txt{
+        width:100%;
+    }
+    .sec04-txt{
+        width:100%;
+        height: 500px;
+    }
+    .section04-pro{
+        width:100%;
+        height: 500px;
+        background-position: bottom;
+    }
+    .sec04-txt-txt{
+        text-align: flex center;
+        width: 90%;
+    }
+    .sec04-txt-txt>h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .sec04-txt-txt>h3{
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin: 2.5% 0;
+    }
+    .sec04-txt-txt>p{
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: none;        
+    }
+    #pro{
+        display: none;
+    }
+    #ru{
+        display: none;
+    }
+    .section04-button-block{
+        display: block;
+    }
+}
+@media (max-width:535px){
+    .section04-pro{
+        height: 400px;
+    }
+    .sec04-txt{
+        height: 400px;
+    }
+    .sec04-txt-txt{
+        width: 90%;
+        text-align: flex center;
+    }
+    .sec04-txt-txt>h1{
+        font-size: 33px;
+    }
+    .sec04-txt-txt>h3{
+        font-size: 20px;
+        margin: 0;
+    }
+    .sec04-txt-txt>p{
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .section04-button-max{
+        width: 150px;
+        margin-top: 10%;
+    }
+    .section04-button-max>p{
+        font-size: 16px;
+    }
+}
+@media (max-width:400px){
+    .sec04-txt-txt>h3{
+        font-size: 18px;
+    }
+    .sec04-txt-txt>p{
+        font-size: 16px;
+    }
+    .section04-button-max{
+        margin-top: 5%;
+    }
+}
