@@ -106,7 +106,7 @@ height: 37px;
 
 
 #section01{
-    background: url(../img/bg-caffe.jpg) no-repeat;
+    background: url(../img/bg-garden.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     /* height: 1000px; */
@@ -263,8 +263,7 @@ height: 37px;
 }
 
 /* section02 end */
-
-#section03{
+.bg1{
     background: url(../img/bg-cha.jpg) no-repeat;
     width: 100%;
     /* height: 1000px; */
@@ -274,113 +273,57 @@ height: 37px;
     position: relative;
     padding-top: 680px;
 }
-#section03>img{
+.bg2{
+    background: url(../img/bg-coke.jpg) no-repeat;
     width: 100%;
+    /* height: 1000px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 680px;
 }
-.section03-warp{
+.bg3{
+    background: url(../img/bg-caffe.jpg) no-repeat;
+    width: 100%;
+    /* height: 1000px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 680px;
+}
+.bg4{
+    background: url(../img/bg-rest.jpg) no-repeat;
+    width: 100%;
+    /* height: 1000px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 680px;
+}
+.sec03-txt{
+    background: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.section03-txt{
     text-align: center;
-    padding: 2% 0 0 0;
 }
-.section03-txt>h1{
+.sec03-txt>h1{
     color: #fff;
     font-size: 48px;
     font-family: 'GyeonggiBatang';
     letter-spacing: 7px;
     font-weight: bold;
+    padding-top: 2%;
 }
-.section03-txt>p{
+.sec03-txt>p{
     color: #fff;
     font-size: 22px;
     font-family: 'GyeonggiBatang';
     line-height: 32px;
-    margin-top: 5px;
+    padding-top: 40px;
     letter-spacing: 1px;
-}
-.sec03-button{
-    margin: 40px 0 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.sec03-button>ul>li{
-    float: left;
-}
-.sec03-button>ul>li>button{
-    background-color: #e3e1e1;
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    margin: 0 5px 0;
-    border: none;
-    cursor: pointer;
-}
-.sec03-button>ul>li>button:hover{
-    background-color: gray;
-}
-.sec03-button>ul>li>button:focus{
-    outline: none;
-}
-@media(max-width:767px){
-    #section03{
-        padding-top: 740px;
-    }
-    .section03-warp{
-        height: 200px;
-    }
-    .section03-txt{
-        padding-top: 3%;
-    }
-    .section03-txt>h1{
-        font-size: 40px;
-        letter-spacing: 3px;
-    }
-    .section03-txt>p{
-        font-size: 18px;
-        line-height: 25px;
-        letter-spacing: none;
-        margin-top: 5px;
-    }
-    .sec03-button{
-        margin-top: 20px;
-    }
-    .sec03-button>ul>li>button{
-        width: 15px;
-        height: 15px;
-    }
-}
-@media (max-width:535px){
-    #section03{
-        padding-top: 650px;
-    }
-    .section03-txt>h1{
-        font-size: 35px;
-    }
-    .section03-txt>p{
-        font-size: 16px;
-        line-height: 22px;
-        margin-top: 4px;
-    }
-}
-@media (max-width:400px){
-    .section03-warp{
-        height: 170px;
-    }
-    .section03-txt>h1{
-        font-size: 30px;
-    }
-    .section03-txt>p{
-        margin-top: 2px;
-    }
-    .sec03-button{
-        margin-top: 15px;
-    }
 }
 
 /* section03 end */

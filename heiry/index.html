@@ -16,6 +16,10 @@
 <link rel="stylesheet" href="css/style.css">
 <!-- main css -->
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="../package/swiper-bundle.min.css">
 
 </head>
 <body>
@@ -114,25 +118,62 @@
 
 <!-- section02 -->
 <div id="section03">
-        <div class="section03-warp">
-            <div class="section03-txt">
-                <h1>석보리 박물관</h1> <br>
-                <p>
-                    운영시간 - 11:00 ~ 18:00 (월요일 휴무) <br>
-                    연락처 - 031.942.2427 <br>
-                    위치 - 3번 게이트 앞
-                </p>
-            </div>
-            <div class="sec03-button">
-                <ul>
-                    <li><button type="button"><a href="#"></a></button></li>
-                    <li><button type="button"><a href="#"></a></button></li>
-                    <li><button type="button"><a href="#"></a></button></li>
-                    <li><button type="button"><a href="#"></a></button></li>
-                </ul>
-            </div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide bg1">
+        <div class="sec03-txt">
+            <h1>석보리 박물관</h1>
+            <p>
+                운영시간 - 11:00 ~ 18:00 (월요일 휴무) <br>
+                연락처 - 031.942.2427 <br>
+                위치 - 3번 게이트 앞
+            </p>
         </div>
+      </div>
+      <div class="swiper-slide bg2">
+        <div class="sec03-txt">
+            <h1>석보리 박물관</h1>
+            <p>
+                운영시간 - 11:00 ~ 18:00 (월요일 휴무) <br>
+                연락처 - 031.942.2427 <br>
+                위치 - 3번 게이트 앞
+            </p>
+        </div>
+      </div>
+      <div class="swiper-slide bg3">
+        <div class="sec03-txt">
+            <h1>석보리 박물관</h1>
+            <p>
+                운영시간 - 11:00 ~ 18:00 (월요일 휴무) <br>
+                연락처 - 031.942.2427 <br>
+                위치 - 3번 게이트 앞
+            </p>
+        </div>
+      </div>
+      <div class="swiper-slide bg4">
+        <div class="sec03-txt">
+            <h1>석보리 박물관</h1>
+            <p>
+                운영시간 - 11:00 ~ 18:00 (월요일 휴무) <br>
+                연락처 - 031.942.2427 <br>
+                위치 - 3번 게이트 앞
+            </p>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 
 <!-- section03 -->
 <div id="section04">
