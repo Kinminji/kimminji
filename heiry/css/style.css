@@ -596,6 +596,9 @@ height: 37px;
     .section05-map{
         width: 100%;
     }
+    #id{
+        width: 90%;
+    }
     .section05-map>h1{
         text-align: center;
         margin-top: 13%;
