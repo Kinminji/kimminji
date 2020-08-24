@@ -47,13 +47,14 @@ height: 37px;
 .menu-box-button>ul{
     display: flex;
     font-family: 'GyeonggiTitleM';
+    margin: 0 0 0 30%;
 }
 .menu-box-button>ul>li{
-    margin: 8% 0 0 65px;
+    margin: 7% 0 0 25px;
 }
 .menu-box-button li a{
-    padding: 20px 25px;
-    display: block;
+    padding:0 15px;
+    display: flex;
 }
 .menu-box-button>ul>li>a:hover{
     font-size: 23px;
@@ -297,11 +298,11 @@ height: 37px;
     font-size: 22px;
     font-family: 'GyeonggiBatang';
     line-height: 32px;
-    margin-top: 15px;
+    margin-top: 5px;
     letter-spacing: 1px;
 }
 .sec03-button{
-    margin: 30px 0 0;
+    margin: 40px 0 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -604,12 +605,8 @@ height: 37px;
 .section05-map{
     width: 50%;
 }
-.section05-map-img{
-    width: 95%;
+#map{
     margin: 5% 0 5%;
-}
-.section05-map-img>img{
-    width: 100%;
 }
 .section05-map>h1{
     font-size: 48px;
@@ -642,6 +639,12 @@ height: 37px;
     letter-spacing: 2px;
     line-height: 35px;
 }
+.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+
 @media (max-width:767px){
     .section05-warp{
         width: 100%;
