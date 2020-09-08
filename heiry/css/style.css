@@ -103,18 +103,15 @@ height: 37px;
     justify-content: center;
 }
 .main-txt{
-    width: 333px;
-    height: 333px;
+    width: 35%;
+    height: 150px;
+    margin: 0 auto;
+    font-weight: bold;
     font-size: 50px;
-    color: #fff;
+    color: #000;
     font-family: 'GyeonggiBatang';
-    border: 10px solid #93b1d3;
-    border-image: linear-gradient(to right bottom, #93b1d3 0%, rgb(104,110,76,0) 100%);
-    border-image-slice: 1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
     letter-spacing: 1px;
+    line-height: 55px;
 }
 @media (max-width:535px){
     .main-title{
@@ -245,122 +242,84 @@ height: 37px;
 }
 
 /* section02 end */
-.bg1{
-    background: url(../img/bg-cha.jpg) no-repeat;
+#section03{
     width: 100%;
-    /* height: 1000px; */
+    height: 910px;
+}
+.section-img{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.section-img-bg1{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 670px;
+    margin: 100px 25px 50px 0;
+}
+.bg1{
+    display: block;
+}
+.section-img-txt{
+    position:absolute;
+    top: 100%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+.section-img-bg1:hover .section-img-txt{
+    top: 0;
+    height: 100%;
 }
 .bg2{
-    background: url(../img/bg-coke.jpg) no-repeat;
-    width: 100%;
-    /* height: 1000px; */
+    display: block;
+}
+.section-img-bg2{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 670px;
+    margin: 100px 0 50px 25px;
+}
+.section-img-bg2:hover .section-img-txt{
+    top: 0;
+    height: 100%;
 }
 .bg3{
-    background: url(../img/bg-caffe.jpg) no-repeat;
-    width: 100%;
-    /* height: 1000px; */
+    display: block;
+}
+.section-img-bg3{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 670px;
+    margin: 50px 25px 100px 0;
+}
+.section-img-bg3:hover .section-img-txt{
+    top: 0;
+    height: 100%;
 }
 .bg4{
-    background: url(../img/bg-rest.jpg) no-repeat;
-    width: 100%;
-    /* height: 1000px; */
+    display: block;
+}
+.section-img-bg4{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    padding-top: 670px;
+    margin: 50px 0 100px 25px;
 }
-.sec03-txt{
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 250px;
-    text-align: center;
+.section-img-bg4:hover .section-img-txt{
+    top: 0;
+    height: 100%;
 }
-.sec03-txt>h1{
-    color: #fff;
-    font-size: 48px;
-    font-family: 'GyeonggiBatang';
-    letter-spacing: 7px;
-    font-weight: bold;
-    padding-top: 1%;
-}
-.sec03-txt>p{
-    color: #fff;
-    font-size: 22px;
-    font-family: 'GyeonggiBatang';
-    line-height: 32px;
-    padding-top: 20px;
-    letter-spacing: 1px;
-}
-@media(max-width:768px){
-    .swiper-slide{
-        padding-top: 570px;
-    }
-    .section03-warp{
-        height: 200px;
-    }
-    .section03-txt{
-        padding-top: 3%;
-    }
-    .section03-txt>h1{
-        font-size: 40px;
-        letter-spacing: 3px;
-    }
-    .section03-txt>p{
-        font-size: 18px;
-        line-height: 25px;
-        letter-spacing: none;
-        margin-top: 5px;
-    }
-    .sec03-button{
-        margin-top: 20px;
-    }
-    .sec03-button>ul>li>button{
-        width: 15px;
-        height: 15px;
-    }
-}
-@media (max-width:535px){
-    .section03-txt>h1{
-        font-size: 35px;
-    }
-    .section03-txt>p{
-        font-size: 16px;
-        line-height: 22px;
-        margin-top: 4px;
-    }
-}
-@media (max-width:400px){
-    .section03-warp{
-        height: 170px;
-    }
-    .section03-txt>h1{
-        font-size: 30px;
-    }
-    .section03-txt>p{
-        margin-top: 2px;
-    }
-    .sec03-button{
-        margin-top: 15px;
-    }
-}
-
-
 /* section03 end */
 #section04{
     width: 100%;
