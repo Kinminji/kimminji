@@ -413,71 +413,42 @@ height: 37px;
     line-height: 55px;
     font-family: 'GyeonggiBatang';
 }
-.sec04-content{
+.sec04-content-box{
     width: 100%;
     height: 500px;
     display: flex;
     margin-top: 10%;
 }
+.sec04-content{
+    display: flex;
+}
 .sec04-pro{
     background: url('../img/provence-vill.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
     width: 50%;
 }
 .sec04-bake{
     background: url('../img/ru-bake2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
     width: 50%;
 }
-.pro-back{
-    background-color: rgba(0,0,0,0.3);
-    width: 100%;
-    height: 500px;
-    position: absolute;
-}
-.bake-back{
-    background-color: rgba(0,0,0,0.3);
-    width: 100%;
-    height: 500px;
-    position: absolute;
-}
 .sec04-txt{
+    background: rgba(0,0,0,0.3);
     color: #fff;
-    text-align: center;
 }
-.sec04-txt-t{
+.sec04-bar{
+    padding-top: 7%;
+    padding-left: 5%;
     display: flex;
 }
-.sec04-txt-t h1{
+.sec04-bar h1{
     font-size: 48px;
-    margin-left: 5%;
-    margin-top: 7%;
-    font-family: 'GyeonggiTitleM';
 }
-.sec04-txt h3{
-    font-family: 'GyeonggiBatang';
-    font-size: 28px;
-    margin-top: 13%;
+.bar-pro{
+    width: 70%;
+    border-bottom: 5px solid #fff;
+    margin: 0 auto;
 }
-.sec04-txt p{
-    font-family: 'GyeonggiBatang';
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 2px;
-    margin-top: 3%;
-}
-.ru .bar{
-    width: 40%;
-}
-.bar{
-    width: 60%;
-    color: #fff;
+.bar-bake{
+    width: 50%;
     border-bottom: 5px solid #fff;
     margin: 0 auto;
 }
