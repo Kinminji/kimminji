@@ -40,58 +40,12 @@
         </div>
     </div>
 
-    <script>
-        jQuery(document).ready(function(){
-            jQuery(".function-button6").click(function(){
-                jQuery(".sec01-button").slideToggle();
-            });
-        });
-    </script>
-
-    <script>
-           $(function(){
-        $(".function-button1").click(function(){
-            $(".function-button1").css("font-size","23px").css("text-decoration","underline");
-            $(".function-button2").css("font-size","16px").css("text-decoration","none");
-            $(".function-button3").css("font-size","16px").css("text-decoration","none");
-            $(".function-button4").css("font-size","16px").css("text-decoration","none");
-            $(".function-button5").css("font-size","16px").css("text-decoration","none");
-        });
-        $(".function-button2").click(function(){
-            $(".function-button2").css("font-size","23px").css("text-decoration","underline");
-            $(".function-button1").css("font-size","16px").css("text-decoration","none");
-            $(".function-button3").css("font-size","16px").css("text-decoration","none");
-            $(".function-button4").css("font-size","16px").css("text-decoration","none");
-            $(".function-button5").css("font-size","16px").css("text-decoration","none");
-        });
-        $(".function-button3").click(function(){
-            $(".function-button3").css("font-size","23px").css("text-decoration","underline");
-            $(".function-button2").css("font-size","16px").css("text-decoration","none");
-            $(".function-button1").css("font-size","16px").css("text-decoration","none");
-            $(".function-button4").css("font-size","16px").css("text-decoration","none");
-            $(".function-button5").css("font-size","16px").css("text-decoration","none");
-        });
-        $(".function-button4").click(function(){
-            $(".function-button4").css("font-size","23px").css("text-decoration","underline");
-            $(".function-button2").css("font-size","16px").css("text-decoration","none");
-            $(".function-button3").css("font-size","16px").css("text-decoration","none");
-            $(".function-button1").css("font-size","16px").css("text-decoration","none");
-            $(".function-button5").css("font-size","16px").css("text-decoration","none");
-        });
-        $(".function-button5").click(function(){
-            $(".function-button5").css("font-size","23px").css("text-decoration","underline");
-            $(".function-button2").css("font-size","16px").css("text-decoration","none");
-            $(".function-button3").css("font-size","16px").css("text-decoration","none");
-            $(".function-button4").css("font-size","16px").css("text-decoration","none");
-            $(".function-button1").css("font-size","16px").css("text-decoration","none");
-        });
-    });
-    </script>
-
     <!-- navi end -->
     <div class="main-title">
-        <h1 class="main-txt">Heiry <br>
-            Art Villey </h1>
+        <div class="title">
+            <h1 class="main-txt">Heiry Art Villey <br></h1>
+            <p>예술인들이 꿈꾸는 지상에서 가장 아름다운 마을</p>
+        </div>
     </div>
 </div>
 
@@ -116,15 +70,6 @@
     </div>
 </div>
 <script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination'
-        }
-    });
-</script>
 
 <!-- section02 -->
 <div id="section03">
@@ -260,99 +205,57 @@
     </div>
 </div>
 
-<script>
-    $(function(){
-        $(".pro").click(function(){
-            $(".section04-pro").css("display","flex");
-            $(".section04-bake").css("display","none");
-        });
-        $(".bake").click(function(){
-            $(".section04-pro").css("display","none");
-            $(".section04-bake").css("display","flex");
-        });
-    });
-</script>
-
 <!-- section04 -->
 <div id="section05">
     <div class="section05-warp">
         <div class="section05-map">
-            <h1>오시는길</h1>
+            <h1>혜이리예술마을 <br>오시는길</h1>
             <div id="map" style="width:95%;height:600px;">
             </div>
-            <p>주소 : 경기도 파주시 탄현민 헤이리마을길 82-105</p>
         </div>
         <div class="section05-tra">
-            <h2>교통정보</h2> <br>
-            <p>
-            2200번 버스 <br>
-            홍대입구 - 서교동 사거리 - 헤이리예술마을4c
-            </p>
-            <p>
-            7300번 버스 <br>
-            홍대입구 - 자유로JC - 헤이리예술마을4c
-            </p>
-            <p>
-            75번 버스 <br>
-            금촌사거리 - 탄현 - 헤이리4번게이트 - 문산제일고
-            </p>
-            <p>
-            900번 버스 <br>
-            통일동산전망대 - 유승아파트 - 법흥3리,헤이리8번게이트
-            </p>
-            
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">자가용</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">교통정보</button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <h2>자가용</h2>
+                <p>주소 : 경기도 파주시 탄현민 헤이리마을길 82-105</p>
+                <p>오시는 길</p>
+                <p>일산대교 -> 이산포JC -> 구산IC -> 장월IC<br> -> 문발IC -> 송촌대교
+                     -> 성동IC에서 우회전<br> -> 헤이리예술마을
+                </p>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h2>교통정보</h2> <br>
+                <p>
+                2200번 버스 <br>
+                홍대입구 - 서교동 사거리 - 헤이리예술마을4c
+                </p>
+                <p>
+                7300번 버스 <br>
+                홍대입구 - 자유로JC - 헤이리예술마을4c
+                </p>
+                <p>
+                75번 버스 <br>
+                금촌사거리 - 탄현 - 헤이리4번게이트 - 문산제일고
+                </p>
+                <p>
+                900번 버스 <br>
+                통일동산전망대 - 유승아파트 - 법흥3리,헤이리8번게이트
+                </p>
+              </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=a032f937baa05d964ee74e4108eae271"></script>
-    <script type="text/javascript">
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-  mapOption = { 
-        center: new kakao.maps.LatLng(37.789053, 126.698711), // 지도의 중심좌표
-        level: 4 // 지도의 확대 레벨
-    };
-
-var map = new kakao.maps.Map(mapContainer, mapOption);
-
-var imageSrc = './img/map-logo2.png', // 마커이미지의 주소입니다    
-    imageSize = new kakao.maps.Size(37.1, 63.7), // 마커이미지의 크기입니다
-    imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-    markerPosition = new kakao.maps.LatLng(37.789053, 126.698711); // 마커가 표시될 위치입니다
-
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-  position: markerPosition,
-  image: markerImage // 마커이미지 설정 
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);  
-
-// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-var content = '<div class="customoverlay">' +
-    '  <a href="#" target="_blank">' +
-    '    <span class="title">헤이리 예술마을</span>' +
-    '  </a>' +
-    '</div>';
-
-// 커스텀 오버레이가 표시될 위치입니다 
-var position = new kakao.maps.LatLng(37.789053, 126.698711);  
-
-// 커스텀 오버레이를 생성합니다
-var customOverlay = new kakao.maps.CustomOverlay({
-    map: map,
-    position: position,
-    content: content,
-    yAnchor: 1 
-});
-    </script>
-
 
 <!-- section05 -->
+<script src="js/main.js"></script>
 
 <script>
 	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
