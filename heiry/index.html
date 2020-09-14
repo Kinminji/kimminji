@@ -24,22 +24,23 @@
 </head>
 <body>
 <div id="section01">
-    <div class="menu_box">
-        <div class="menu-box-logo">
-            <div class="logo"><a href="#section01"><img src="img/logo.png" alt="logo"></a></div>
+    <div class="navi">
+        <div class="navi-logo">
+            <div class="logo">
+                <a href="#section01"><img src="img/logo.png" alt=""></a>
+            </div>
         </div>
-        <div class="menu-box-button">
-            <ul class="sec01-button">
-                <li><a href="#section01" class="function-button1">Main</a></li>
-                <li><a href="#section02" class="function-button2">Intro</a></li>
-                <li><a href="#section03" class="function-button3">In</a></li>
-                <li><a href="#section04" class="function-button4">Out</a></li>
-                <li><a href="#section05" class="function-button5">Map</a></li>
+        <div class="navi-button">
+            <ul>
+                <li><a href="#section01" class="btn01">main</a></li>
+                <li><a href="#section02" class="btn02">intro</a></li>
+                <li><a href="#section03" class="btn03">in</a></li>
+                <li><a href="#section04" class="btn04">out</a></li>
+                <li><a href="#section05" class="btn05">map</a></li>
             </ul>
-            <button type="button" class="function-button6"><i><img src="img/btn.png" alt=""></i></button>
+            <span class="btn"><img src="img/btn.png" alt=""></span>
         </div>
     </div>
-
     <!-- navi end -->
     <div class="main-title">
         <div class="title">
@@ -176,65 +177,87 @@
     <div class="sec04-content">
         <div class="sec04-pro">
             <div class="sec04-txt">
-                <div class="sec04-bar">
-                    <h1>프로방스</h1>
-                    <p class="bar-pro"></p>
-                </div>
-                <h3>주소 : 경기도 파주시 탄현면 새오리로 69</h3> <br>
-                <p>남프랑스의 정취가 가득한 예쁜 마을과 아기자기한 골목들, <br>
-                꿈길 같은 꽃밭과 정원, 갓 구운 고소한 냄새, 자연을 닮은 갖가지 <br>
-                허브의 향기들, 동화 속 한 장면에 들어온 듯한 포토존과 문과 체험 <br>
-                공간들 그리고, 오래 사람받아온 맛집들 까지 프로방스마을에는 <br>
-                언제나 풍요로움이 가득합니다.</p>
+                <a href="javascript:openModal('modal1');" class="button modal-open">프로방스</a>
             </div>
         </div>
         <div class="sec04-bake">
             <div class="sec04-txt">
-                <div class="sec04-bar">
-                    <h1>류재은 베이커리</h1>
-                    <p class="bar-bake"></p>
+                <a href="javascript:openModal('modal2');" class="button modal-open">류재은 베이커리</a>
+            </div>
+        </div>
+        <div id="modal">
+            <div class="modal-con modal1">
+                <a href="javascript:;" class="close">X</a>
+                <p class="title">프로방스</p>
+                <div class="con">
+                    <h3>주소 : 경기도 파주시 탄현면 새오리로 69</h3> <br>
+                    <p>남프랑스의 정취가 가득한 예쁜 마을과 아기자기한 골목들, <br>
+                    꿈길 같은 꽃밭과 정원, 갓 구운 고소한 냄새, 자연을 닮은 갖가지 <br>
+                    허브의 향기들, 동화 속 한 장면에 들어온 듯한 포토존과 문과 체험 <br>
+                    공간들 그리고, 오래 사람받아온 맛집들 까지 프로방스마을에는 <br>
+                    언제나 풍요로움이 가득합니다.</p>
                 </div>
-                <h3>주소: 경기도 파주시 탄현면 요풍길 265</h3> <br>
-                <p>향긋하고 고소한 마늘빵, <br> 
-                매장에서 직접 정성껏 쑤운 팥으로 만드는 단팥빵, <br> 
-                와인으로 숭성한 과일로 만드는 파네토네 등 <br>
-                류재은베이커리에서만이 선보일 수 있는 진심이 담긴 빵과 디저트들이 <br> 
-                여러분의아주 특별한 날을 더욱 특별하게 만들어 드립니다.</p>
+            </div>
+
+            <div class="modal-con modal2">
+                <a href="javascript:;" class="close">X</a>
+                <p class="title">류재은 베이커리</p>
+                <div class="con">
+                    <h3>주소: 경기도 파주시 탄현면 요풍길 265</h3> <br>
+                    <p>향긋하고 고소한 마늘빵, <br> 
+                    매장에서 직접 정성껏 쑤운 팥으로 만드는 단팥빵, <br> 
+                    와인으로 숭성한 과일로 만드는 파네토네 등 <br>
+                    류재은베이커리에서만이 선보일 수 있는 진심이 담긴 빵과 디저트들이 <br> 여러분의아주 특별한 날을 더욱 특별하게 만들어 드립니다.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+
 <!-- section04 -->
 <div id="section05">
-    <div class="section05-warp">
-        <div class="section05-map">
-            <h1>혜이리예술마을 <br>오시는길</h1>
-            <div id="map" style="width:95%;height:600px;">
+    <div class="sec05-black">
+        <div class="section05-warp">
+            <div class="section05-map">
+                <h1>헤이리예술마을 <br>오시는길</h1>
+                <div id="map" style="width:95%;height:600px;">
+                </div>
             </div>
-        </div>
-        <div class="section05-tra">
-            <h2>교통정보</h2> <br>
-            <p>
-            2200번 버스 <br>
-            홍대입구 - 서교동 사거리 - 헤이리예술마을4c
-            </p><br>
-            <p>
-            7300번 버스 <br>
-            홍대입구 - 자유로JC - 헤이리예술마을4c
-            </p><br>
-            <p>
-            75번 버스 <br>
-            금촌사거리 - 탄현 - 헤이리4번게이트 - 문산제일고
-            </p><br>
-            <p>
-            900번 버스 <br>
-            통일동산전망대 - 유승아파트 - 법흥3리,헤이리8번게이트
-            </p>
-            <p>주소 : 경기도 파주시 탄현민 헤이리마을길 82-105</p>
+            <div class="section05-tra">
+                <h2>교통정보</h2> <br>
+                <p>
+                2200번 버스 <br>
+                홍대입구 - 서교동 사거리 - 헤이리예술마을4c
+                </p><br>
+                <p>
+                7300번 버스 <br>
+                홍대입구 - 자유로JC - 헤이리예술마을4c
+                </p><br>
+                <p>
+                75번 버스 <br>
+                금촌사거리 - 탄현 - 헤이리4번게이트 - 문산제일고
+                </p><br>
+                <p>
+                900번 버스 <br>
+                통일동산전망대 - 유승아파트 - 법흥3리,헤이리8번게이트
+                </p>
+                <p>주소 : 경기도 파주시 탄현민 헤이리마을길 82-105</p>
+            </div>
         </div>
     </div>
 </div>
+<!-- footer -->
+<footer>
+    <div class="footer-left">
+        <div class="footer-txt">
+            <p> 경기도 파주시 탄현면 헤이리마을길 82-105</p>
+            <p> 대표전화 031-046-8551 </p>
+            <p>© Copyright Heriry Art Villey. ALL RIGHTS RESERVED.</p>
+            <p>Kim Min Ji</p>
+        </div>
+    </div>
+</footer>
 
 <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=a032f937baa05d964ee74e4108eae271"></script>
 
@@ -246,10 +269,10 @@
 	if (jQuery(window).width() > 0) {
     jQuery(window).on("scroll",function(ev){
         if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
-            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+            jQuery('.navi').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
         }
         else{
-			jQuery('.menu_box').removeClass('fixed');
+			jQuery('.navi').removeClass('fixed');
         }
         return false;
     });

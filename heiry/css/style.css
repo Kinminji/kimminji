@@ -16,7 +16,7 @@
     color: #fff;
 }
 
-.menu_box{
+.navi{
     /* background: url('../img/bg-color-pink.jpg'); */
     width:100%; 
     height:80px; 
@@ -28,66 +28,59 @@
     margin: 0 auto;
     z-index: 999;
 }
-
-.menu-box-logo{
-    width: 30%;
+.navi-logo{
+    width: 50%;
+}
+.navi-logo>.logo{
     display: flex;
-    justify-content: flex-start;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
 }
-.logo{
+.logo img{
+    width: 100px;
+}
+.navi-button{
     display: flex;
-    justify-content: flex-start;
+    width: 50%;
+    margin-left: 20%;
 }
-.logo>a{
-    margin-top: 26%;
-}
-.logo>a>img{
-width: 85px;
-height: 37px;
-}
-.menu-box-button{
-    width: 30%;
+.navi-button>ul{
     display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
 }
-.menu-box-button>ul{
-    display: flex;
+.navi-button>ul>li{
+    padding: 8% 30px 0;
+}
+.navi-button>ul>li>a{
+    font-size: 18px;
     font-family: 'GyeonggiTitleM';
+    cursor: pointer;
 }
-.menu-box-button>ul>li{
-    margin: 8% 0 0 65px;
-}
-.menu-box-button>ul>li>a:hover{
-    font-size: 23px;
+.navi-button>ul>li>a:hover{
     text-decoration: underline;
+    font-size: 23px;
 }
-.function-button6{
+.btn{
     display: none;
-}
-.function-button6:hover{
-    background: #ccc;
-    border-radius: 5px;
+    padding-top: 4%;
+    cursor: pointer;
 }
 
 @media (max-width:768px){
-    .function-button6{
-        width: 40px;
-        height: 40px;
-        margin: 11% 0 0;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-    .menu-box-button>ul{
+    
+    .navi-button>ul{
         display: none;
+        position: fixed;
+        top: 70px;
+        right: 50px;
     }
-    .function-button6{
+    .navi-button>ul>li{
+        padding: 45% 0;
+    }
+    .btn{
         display: block !important;
-    }
-    .function-button6:focus{
-        outline: none;
+        position: fixed;
+        right: 50px;
     }
 }
 
@@ -122,13 +115,21 @@ height: 37px;
     letter-spacing: 1px;
 }
 .title p{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
     font-family: 'GyeonggiBatang'; 
     color: #fff;
     letter-spacing: 3px;
 }
+@media(max-width:768px){
+    #section01{
+        background-size: cover;
+    }
+}
 @media (max-width:535px){
+    #section01{
+        background-attachment: none !important;
+    }
     .main-title{
         height: 800px;
     }
@@ -137,14 +138,14 @@ height: 37px;
         font-size: 40px;
     }
     .title p{
-        font-size: 22px; 
+        font-size: 20px; 
         line-height: 30px; 
         text-align: center;
     }
 }
 @media (max-width:375px){
     #section01{
-        background-position: center !important;
+        background-attachment: none !important;
     }
 }
 
@@ -184,16 +185,16 @@ height: 37px;
     padding: 1% 0 5% 0;
 }
 .sec02-txt>h2{
-    font-size: 40px;
+    font-size: 30px;
     color: #374d01;
     font-family: 'MapoMaponaru';
-    line-height: 60px;
+    line-height: 35px;
     letter-spacing: 3px;
 }
 .sec02-txt>p{
-    font-size: 23px;
+    font-size: 20px;
     color: #121212;
-    line-height: 35px;
+    line-height: 30px;
     font-family: 'GyeonggiBatang';
     margin-top: 8%;
     font-weight: normal;
@@ -219,22 +220,18 @@ height: 37px;
         padding-top: 15%;
     }
     .sec02-txt>h2{
-        font-size: 38px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 30px;
     }
     .sec02-txt>p{
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 25px;
         margin-top: 6%;
     }
 }
 @media (max-width:535px){
     .sec02-txt{
         width: 95%;
-    }
-    .sec02-txt>h2{
-        font-size: 32px;
-        line-height: 45px;
     }
     .sec02-txt>p{
         font-size: 18px;
@@ -254,8 +251,8 @@ height: 37px;
         width: 95%;
     }
     .sec02-txt>h2{
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 25px;
     }
     .sec02-txt>p{
         font-size: 16px;
@@ -275,8 +272,8 @@ height: 37px;
     padding-top: 10%;
 }
 .sec03-main>h1{
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 40px;
+    line-height: 45px;
     font-family: 'GyeonggiBatang';
 }
 .section-img{
@@ -299,7 +296,7 @@ height: 37px;
     height: 0;
     width: 100%;
     transition: .5s ease;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     overflow: hidden;
 }
 .section-img-bg1:hover .section-img-txt{
@@ -342,13 +339,14 @@ height: 37px;
     text-align: center;
 }
 .section03-txt h1{
-    font-size: 45px;
+    font-size: 30px;
     color: #fff;
-    font-family: 'GyeonggiTitleM';
+    font-family: 'GyeonggiBatang';
+    font-weight: bold;
     margin-top: 12%;
 }
 .section03-txt p{
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     font-family: 'GyeonggiBatang';
     line-height: 20px;
@@ -360,18 +358,18 @@ height: 37px;
 
 @media (max-width:768px){
     .sec03-main h1{
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 35px;
+        line-height: 40px;
     }
     .section-img{
         flex-wrap: wrap;
     }
     .section03-txt h1{
-        font-size: 42px;
+        font-size: 25px;
         margin-top: 13%;
     }
     .section03-txt p{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 15px;
     }
     .section-img-bg3{
@@ -380,25 +378,25 @@ height: 37px;
 }
 @media (max-width:535px){
     .sec03-main h1{
-        font-size: 40px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 35px;
     }
     .section03-txt h1{
-        font-size: 37px;
+        font-size: 23px;
         margin-top: 8%;
     }
     .section03-txt p{
-        font-size: 18px;
-        line-height: 12px;
+        font-size: 16px;
+        line-height: 9px;
     }
 }
 @media (max-width:375px){
     .sec03-main h1{
-        font-size: 38px;
+        font-size: 25px;
         line-height: 45px;
     }
     .section03-txt h1{
-        font-size: 34px;
+        font-size: 20px;
         margin-top: 5%;
     }
     .section03-txt p{
@@ -420,8 +418,8 @@ height: 37px;
     margin-right: 10%;
 }
 .sec04-main h1{
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 40px;
+    line-height: 45px;
     font-family: 'GyeonggiBatang';
 }
 .sec04-content-box{
@@ -431,8 +429,40 @@ height: 37px;
     margin-top: 10%;
 }
 .sec04-content{
+    width: 100%;
     display: flex;
-    padding: 8% 0;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+.sec04-pro{
+    background: url('../img/provence-vill.jpg');
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sec04-bake{
+    background: url('../img/ru-bake2.jpg');
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sec04-txt{
+    background: rgba(0,0,0,0.5);
+}
+.sec04-content-box{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 10%;
+}
+.sec04-content{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 1%;
 }
 .sec04-pro{
     background: url('../img/provence-vill.jpg');
@@ -454,40 +484,63 @@ height: 37px;
     background: rgba(0,0,0,0.5);
     color: #fff;
 }
-.sec04-bar{
-    padding-top: 7%;
-    padding-left: 5%;
+.sec04-txt a{
+    font-size: 35px;
     display: flex;
-}
-.sec04-bar h1{
-    font-size: 48px;
-}
-.bar-pro{
-    width: 70%;
-    border-bottom: 5px solid #fff;
-    margin: 0 auto;
-}
-.bar-bake{
-    width: 50%;
-    border-bottom: 5px solid #fff;
-    margin: 0 auto;
-}
-.sec04-txt{
+    align-items: center;
+    justify-content: center;
     height: 500px;
-    text-align: center;
-}
-.sec04-txt h3{
     font-family: 'GyeonggiBatang';
-    font-size: 28px;
-    margin-top: 13%;
+    letter-spacing: 3px;
 }
-.sec04-txt p{
-    font-family: 'GyeonggiBatang';
+
+#modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 9999999;
+}
+.modal-con{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 60%;
+    min-height: 30%;
+    background: #fff;
+}
+.modal-con .title{
     font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 2px;
-    margin-top: 3%;
+    padding: 20px;
+    background: #fff;
 }
+.modal-con .con{
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 30px;
+}
+.modal-con .close{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    right: 10px;
+    top: 10px;
+}
+
 @media (max-width:768px){
     .sec04-content{
         flex-direction: column;
@@ -499,8 +552,8 @@ height: 37px;
         width: 100%;
     }
     .sec04-main h1{
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 35px;
+        line-height: 40px;
     }
     .sec04-content-box{
         height: 400px;
@@ -513,26 +566,27 @@ height: 37px;
         padding-left: 3%;
     }
     .sec04-bar h1{
-        font-size: 42px;
+        font-size: 30px;
     }
     .sec04-txt h3{
-        font-size: 25px;
+        font-size: 22px;
         margin-top: 6%;
     }
     .sec04-txt p{
+        font-size: 18px;
         margin-top: 3%;
     }
 }
 @media (max-width:535px){
     .sec04-main h1{
-        font-size: 40px;
+        font-size: 30px;
         line-height: 45px;
     }
     .sec04-bar{
         padding-top: 10%;
     }
     .sec04-bar h1{
-        font-size: 38px;
+        font-size: 25px;
     }
     .bar-pro{
         width: 60%;
@@ -541,7 +595,7 @@ height: 37px;
         width: 40%;
     }
     .sec04-txt h3{
-        font-size: 22px;
+        font-size: 20px;
         margin-top: 10%;
     }
     .sec04-txt p{
@@ -551,14 +605,14 @@ height: 37px;
 }
 @media (max-width:375px){
     .sec04-main h1{
-        font-size: 38px;
+        font-size: 30px;
         line-height: 42px;
     }
     .sec04-bar{
         padding-top: 10%;
     }
     .sec04-bar h1{
-        font-size: 33px;
+        font-size: 25px;
     }
     .bar-pro{
         width: 55%;
@@ -578,13 +632,15 @@ height: 37px;
 /* section04 end */
 
 #section05{
-    background: url('../img/anger.jpg');
+    background: url('../img/anger2.jpg');
     width: 100%;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.sec05-black{
+    background: rgba(0,0,0,0.6);
 }
 .section05-warp{
     width: 70%;
@@ -600,8 +656,9 @@ height: 37px;
 }
 .section05-map>h1{
     color: #fff;
-    font-size: 48px;
-    font-family: 'GyeonggiTitleM';
+    font-size: 40px;
+    line-height: 45px;
+    font-family: 'GyeonggiBatang';
     letter-spacing: 3px;
     margin-top: 20%;
     margin-bottom: 5%;
@@ -610,22 +667,23 @@ height: 37px;
     background: #e3e3e3;
     height: 600px;
     width: 45%;
-    margin-top: 21.5%;
+    margin-top: 21%;
     text-align: right;
     padding: 0 2.5%;
+    margin-left: 5%;
 }
 .section05-tra p:last-child{
     color: #121212;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'GyeonggiBatang';
     font-weight: bold;
     letter-spacing: 3px;
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: center;
 }
 .section05-tra h2{
     color: #121212;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'GyeonggiBatang';
     font-weight: bold;
     margin-top: 5%;
@@ -634,10 +692,10 @@ height: 37px;
 }
 .section05-tra>p{
     color: #121212;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'GyeonggiBatang';
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 30px;
 }
 
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
@@ -660,7 +718,7 @@ height: 37px;
     .section05-map>h1{
         text-align: center;
         margin-top: 13%;
-        font-size: 40px;
+        font-size: 35px;
     }
     .section05-map-img{
         width: 80%;
@@ -670,8 +728,8 @@ height: 37px;
     }
     .section05-map>p{
         text-align: center;
-        margin-bottom: 10%;
-        font-size: 20px;
+        margin-bottom: 8%;
+        font-size: 18px;
     }
     .section05-tra{
         width: 90%;
@@ -680,22 +738,22 @@ height: 37px;
         margin-bottom: 3%;
     }
     .section05-tra h2{
-        font-size: 25px;
+        font-size: 22px;
         margin-top: 3%;
         margin-bottom: 3%;
         line-height: 30px;
     }
     .section05-tra p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .section05-tra p:last-child{
-        font-size: 22px;
+        font-size: 20px;
         margin-top: 5%;
     }
 }
 @media (max-width:536px){
     .section05-map>h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .section05-map-img{
         width: 70%;
@@ -716,12 +774,12 @@ height: 37px;
         margin-bottom: 0;
     }
     .section05-tra p{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 25px;
     }
     .section05-tra p:last-child{
         font-size: 20px;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 }
 @media (max-width:376px){
@@ -739,6 +797,25 @@ height: 37px;
     }
     .section05-tra p:last-child{
         font-size: 18px;
-        margin-top: 5%;
+        margin-top: 4%;
     }
+}
+footer{
+    width: 100%;
+    background-color: #555;
+}
+.footer-left{
+    color: #999;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+.footer-txt{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer-txt p{
+    font-size: 14px;
+    margin-top: 1%;
 }

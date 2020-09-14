@@ -4,46 +4,46 @@
 
 
         $(function(){
-            $('.function-button6').click(function(){
-                $('.menu-box-button>ul').slideToggle();
+            $('.btn').click(function(){
+                $('.navi-button>ul').slideToggle();
             });
         });
 
            $(function(){
-            $(".function-button1").click(function(){
-                $(".function-button1").css("font-size","23px").css("text-decoration","underline");
-                $(".function-button2").css("font-size","16px").css("text-decoration","none");
-                $(".function-button3").css("font-size","16px").css("text-decoration","none");
-                $(".function-button4").css("font-size","16px").css("text-decoration","none");
-                $(".function-button5").css("font-size","16px").css("text-decoration","none");
+            $(".btn01").click(function(){
+                $(".btn01").css("font-size","23px").css("text-decoration","underline");
+                $(".btn02").css("font-size","18px").css("text-decoration","none");
+                $(".btn03").css("font-size","18px").css("text-decoration","none");
+                $(".btn04").css("font-size","18px").css("text-decoration","none");
+                $(".btn05").css("font-size","18px").css("text-decoration","none");
             });
-            $(".function-button2").click(function(){
-                $(".function-button2").css("font-size","23px").css("text-decoration","underline");
-                $(".function-button1").css("font-size","16px").css("text-decoration","none");
-                $(".function-button3").css("font-size","16px").css("text-decoration","none");
-                $(".function-button4").css("font-size","16px").css("text-decoration","none");
-                $(".function-button5").css("font-size","16px").css("text-decoration","none");
+            $(".btn02").click(function(){
+                $(".btn02").css("font-size","23px").css("text-decoration","underline");
+                $(".btn01").css("font-size","18px").css("text-decoration","none");
+                $(".btn03").css("font-size","18px").css("text-decoration","none");
+                $(".btn04").css("font-size","18px").css("text-decoration","none");
+                $(".btn05").css("font-size","18px").css("text-decoration","none");
             });
-            $(".function-button3").click(function(){
-                $(".function-button3").css("font-size","23px").css("text-decoration","underline");
-                $(".function-button2").css("font-size","16px").css("text-decoration","none");
-                $(".function-button1").css("font-size","16px").css("text-decoration","none");
-                $(".function-button4").css("font-size","16px").css("text-decoration","none");
-                $(".function-button5").css("font-size","16px").css("text-decoration","none");
+            $(".btn03").click(function(){
+                $(".btn03").css("font-size","23px").css("text-decoration","underline");
+                $(".btn02").css("font-size","18px").css("text-decoration","none");
+                $(".btn01").css("font-size","18px").css("text-decoration","none");
+                $(".btn04").css("font-size","18px").css("text-decoration","none");
+                $(".btn05").css("font-size","18px").css("text-decoration","none");
             });
-            $(".function-button4").click(function(){
-                $(".function-button4").css("font-size","23px").css("text-decoration","underline");
-                $(".function-button2").css("font-size","16px").css("text-decoration","none");
-                $(".function-button3").css("font-size","16px").css("text-decoration","none");
-                $(".function-button1").css("font-size","16px").css("text-decoration","none");
-                $(".function-button5").css("font-size","16px").css("text-decoration","none");
+            $(".btn04").click(function(){
+                $(".btn04").css("font-size","23px").css("text-decoration","underline");
+                $(".btn02").css("font-size","18px").css("text-decoration","none");
+                $(".btn03").css("font-size","18px").css("text-decoration","none");
+                $(".btn01").css("font-size","18px").css("text-decoration","none");
+                $(".btn05").css("font-size","18px").css("text-decoration","none");
             });
-            $(".function-button5").click(function(){
-                $(".function-button5").css("font-size","23px").css("text-decoration","underline");
-                $(".function-button2").css("font-size","16px").css("text-decoration","none");
-                $(".function-button3").css("font-size","16px").css("text-decoration","none");
-                $(".function-button4").css("font-size","16px").css("text-decoration","none");
-                $(".function-button1").css("font-size","16px").css("text-decoration","none");
+            $(".btn05").click(function(){
+                $(".btn05").css("font-size","23px").css("text-decoration","underline");
+                $(".btn02").css("font-size","18px").css("text-decoration","none");
+                $(".btn03").css("font-size","18px").css("text-decoration","none");
+                $(".btn04").css("font-size","18px").css("text-decoration","none");
+                $(".btn01").css("font-size","18px").css("text-decoration","none");
             });
         });
 
@@ -55,16 +55,33 @@
         }
     });
 
-    $(function(){
-        $(".pro").click(function(){
-            $(".section04-pro").css("display","flex");
-            $(".section04-bake").css("display","none");
-        });
-        $(".bake").click(function(){
-            $(".section04-pro").css("display","none");
-            $(".section04-bake").css("display","flex");
-        });
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
     });
+
+    function openModal(modalname){
+      document.get
+      $("#modal").fadeIn(300);
+      $("."+modalname).fadeIn(300);
+  }
+  
+  $("#modal, .close").on('click',function(){
+      $("#modal").fadeOut(300);
+      $(".modal-con").fadeOut(300);
+  });
+
+    
 
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -107,8 +124,8 @@ marker.setMap(map);
 
 // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 var content = '<div class="customoverlay">' +
-  '  <a href="#" target="_blank">' +
-  '    <span class="title">헤이리 예술마을</span>' +
+  '  <a href="http://kko.to/SopIvQrYp" target="_blank">' +
+  '    <span class="title">헤이리예술마을</span>' +
   '  </a>' +
   '</div>';
 
