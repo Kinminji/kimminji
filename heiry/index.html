@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>헤이리마을</title>
 <script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <style>
     *{list-style: none; margin: 0; padding:0;}
 </style>
@@ -20,6 +21,8 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -54,10 +57,10 @@
 <div id="section02">
     <div class="sec02-warp">
         <div class="section02-warp">
-            <div class="sec02-img wow slideInLeft">
+            <div class="sec02-img" data-aos="fade-right" data-aos-duration="1000">
                 <img src="img/intro-img.jpg" alt="">
             </div>
-            <div class="sec02-txt wow slideInRight" data-wow-duration="2s">
+            <div class="sec02-txt" data-aos="fade-left" data-aos-duration="1500">
                 <h2>예술인들이 꿈꾸는 <br>
                 지상에서 가장 아름다운 마을</h2>
                 <p>1998년 창립총회를 시작으로 헤이리는 15만평에 미술인, 음악가, <br>
@@ -71,10 +74,11 @@
     </div>
 </div>
 <script src="js/wow.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- section02 -->
 <div id="section03">
-    <div class="sec03-main wow slideInLeft"  data-wow-duration="2s">
+    <div class="sec03-main" data-aos="fade-right" data-aos-duration="2000">
         <h1>헤이리예술마을 <br>
             주요 볼거리</h1>
     </div>
@@ -170,7 +174,7 @@
 
 <!-- section03 -->
 <div id="section04">
-    <div class="sec04-main wow slideInRight" data-wow-duration="2s">
+    <div class="sec04-main" data-aos="fade-left" data-aos-duration="2000">
         <h1>헤이리예술마을 <br>
             주위 볼거리</h1>
     </div>
@@ -231,24 +235,27 @@
                 </div>
             </div>
             <div class="section05-tra">
-                <h2>교통정보</h2> <br>
-                <p>
-                2200번 버스 <br>
-                홍대입구 - 서교동 사거리 - 헤이리예술마을4c
-                </p><br>
-                <p>
-                7300번 버스 <br>
-                홍대입구 - 자유로JC - 헤이리예술마을4c
-                </p><br>
-                <p>
-                75번 버스 <br>
-                금촌사거리 - 탄현 - 헤이리4번게이트 - 문산제일고
-                </p><br>
-                <p>
-                900번 버스 <br>
-                통일동산전망대 - 유승아파트 - 법흥3리,헤이리8번게이트
-                </p>
-                <p>주소 : 경기도 파주시 탄현민 헤이리마을길 82-105</p>
+                <p></p>
+                <div class="sec05-txt">
+                    <h2>교통정보</h2> <br>
+                    <p>
+                    2200번 버스 <br>
+                    홍대입구 - 서교동 사거리 - 헤이리예술마을4c
+                    </p><br>
+                    <p>
+                    7300번 버스 <br>
+                    홍대입구 - 자유로JC - 헤이리예술마을4c
+                    </p><br>
+                    <p>
+                    75번 버스 <br>
+                    금촌사거리 - 탄현 - 헤이리4번게이트 - 문산제일고
+                    </p><br>
+                    <p>
+                    900번 버스 <br>
+                    통일동산전망대 - 유승아파트 - 법흥3리,헤이리8번게이트
+                    </p>
+                    <p>주소 : 경기도 파주시 탄현민 헤이리마을길 82-105</p>
+                </div>
             </div>
         </div>
     </div>
