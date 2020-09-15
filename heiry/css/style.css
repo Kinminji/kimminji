@@ -771,7 +771,7 @@
     }
     .sec05-txt{
         width: 90%;
-        height: 450px;
+        height: 500px;
         margin: 0 auto;
         margin-bottom: 5%;
     }
@@ -792,6 +792,12 @@
 @media (max-width:376px){
     .section05-map>p{
         font-size: 17px;
+    }
+    .sec05-txt{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        margin-bottom: 5%;
     }
     .sec05-txt h2{
         font-size: 20px;
