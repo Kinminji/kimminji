@@ -47,7 +47,6 @@ AOS.init();
             });
         });
 
-    new WOW().init();
 
     var swiper = new Swiper('.swiper-container', {
         pagination: {
