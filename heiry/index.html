@@ -230,7 +230,9 @@
             <h1>헤이리예술마을 <br>오시는길</h1>
             <div class="section05-warp">
                 <div class="section05-map">
-                    <div id="map" style="width:95%;height:600px;"></div>
+                    <div id="map" style="width:500px;height:100%;"></div>
+                    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=	f5974e0989c335cd6dd83a174615b4bf"></script>
+ 
                 </div>
                 <div class="section05-tra">
                     <h2>교통정보</h2> <br>
@@ -298,6 +300,15 @@
 		  return false;
 	   });
 	});
+</script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(37.789053, 126.698711),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
 </script>
 <script>
 /**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/

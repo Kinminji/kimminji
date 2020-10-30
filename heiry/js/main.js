@@ -97,13 +97,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-mapOption = { 
-      center: new kakao.maps.LatLng(37.789053, 126.698711), // 지도의 중심좌표
-      level: 4 // 지도의 확대 레벨
-  };
-
-var map = new kakao.maps.Map(mapContainer, mapOption);
 
 var imageSrc = './img/map-logo2.png', // 마커이미지의 주소입니다    
   imageSize = new kakao.maps.Size(37.1, 63.7), // 마커이미지의 크기입니다
