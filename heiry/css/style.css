@@ -634,6 +634,7 @@
 }
 .sec05-black{
     background: rgba(0,0,0,0.6);
+    /* padding-bottom: 2%; */
 }
 .section05-main h1{
     font-size: 40px;
